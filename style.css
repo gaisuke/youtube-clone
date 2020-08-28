@@ -1,7 +1,7 @@
 :root {
     --color-greyBg : #f9f9f9;
     --color-grey : #e5e5e5;
-    --color-greyBg : #e5e5a8;
+    --color-greyLight : #e5e5e5a8;
 }
 
 * {
@@ -11,10 +11,6 @@
 body {
     margin: 0;
     font-family: Roboto;
-}
-
-span {
-    font-style : normal;
 }
 
 .topbar {
@@ -27,47 +23,99 @@ span {
     top: 0;
     background: white;
 }
-.topbar > span {
+.topbar i {
     padding: 0 7.5px;
+    cursor: pointer;
 }
-.topbar > .logo {
+.logo {
     display: flex;
     align-items: center;
 }
-.topbar > .logo > img {
+.logo img {
     width: 100px;
     margin-left: 15px;
 }
-/* .topbar > .searchbar > form {
-    border: 1px solid #dddddd;
-    height: 35px;
-} */
-input {
-    width: 500px;
-    border-radius: 0;
-    border: none;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #dddddd;
+.searchbar form {
+    border: 1px solid #ddd;
     height: 35px;
 }
-.topbar > .searchbar > form > input {
-    width: 500px;
+.searchbar input , button {
     border-radius: 0;
     border: none;
     height: 100%;
     margin: 0;
     padding: 0;
-    border: 1px solid #dddddd;
-    height: 35px;
 }
-.topbar > .searchbar > form > button {
-    border: 1px solid #dddddd;
-    height: 35px;
-    border-radius: 0;
-    border: none;
+.searchbar input {
+    width: 500px;
+}
+.navbar i.userprofile img {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.navbar img {
     height: 100%;
-    margin: 0;
-    padding: 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+.main {
+    height: calc(100vh - 70px);
+    display: flex;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 270px;
+    height: 100%;
+    overflow-y: scroll;
+}
+.sidebar .menu {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--color-greyLight);
+    padding: 15px 0;
+}
+.menu h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 25px 20px;
+}
+.sidebar .menu-items {
+    width: 100%;
+    display: flex;
+    padding: 12.5px 25px;
+    align-items: center;
+    cursor: pointer;
+}
+.menu-items.active {
+    background: var(--color-grey);
+
+}
+.menu-items.active i {
+    color: red;
+}
+.menu-items span {
+    font-size: 14px;
+}
+.menu-items:hover {
+    background: var(--color-greyLight);
+}
+.menu-items i {
+    margin-right: 25px;
+}
+
+.menu-items i.userprofile {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+i.userprofile img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
 }

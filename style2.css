@@ -1,0 +1,51 @@
+:root {
+    --color-greyBg : #f9f9f9;
+    --color-grey : #e5e5e5;
+    --color-greyBg : #e5e5a8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+span {
+    font-style : normal;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+.topbar span {
+    padding: 0 7.5px;
+}
+.topbar .logo {
+    display: flex;
+    align-items: center;
+}
+.topbar .logo img {
+    width: 100px;
+    margin-left: 15px;
+}
+.topbar .searchbar form {
+    border: 1px solid #ddd;
+    height: 35px;
+}
+.topbar .searchbar input , button {
+    border-radius: 0;
+    border: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
