@@ -151,7 +151,7 @@ i.userprofile img {
 }
 .details .author {
     height: 40px;
-    width: 40px;
+    width: 40px !important;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 10px;
@@ -167,8 +167,8 @@ i.userprofile img {
 }
 .text h3{
     margin: 0;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
 }
 .text a {
     color: inherit;
