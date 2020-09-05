@@ -38,8 +38,12 @@ body {
 .searchbar form {
     border: 1px solid #ddd;
     height: 35px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
-.searchbar input , button {
+.searchbar button {
     border-radius: 0;
     border: none;
     height: 100%;
@@ -48,6 +52,12 @@ body {
 }
 .searchbar input {
     width: 500px;
+    border-radius: 0;
+    border: none;
+    height: 100%;
+    padding: 5px;
+    outline: none;
+    margin-top: -5px;
 }
 .navbar i.userprofile img {
     height: 24px;
@@ -152,14 +162,13 @@ i.userprofile img {
 .details .author {
     height: 40px;
     width: 40px;
-    border-radius: 50%;
-    overflow: hidden;
     margin-right: 10px;
 }
 .author img {
-    height: 100%;
+    height: 40px;
     object-fit: cover;
-    width: 100%;
+    width: 40px;
+    border-radius: 50%;
 }
 .details .text {
     display: flex;
