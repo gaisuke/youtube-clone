@@ -77,6 +77,10 @@ body {
     overflow: hidden;
 }
 
+#navopener {
+    display: none;
+}
+
 .sidebar {
     width: 270px;
     height: 100%;

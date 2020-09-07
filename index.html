@@ -15,7 +15,8 @@
 <body>
     <div class="topbar">
         <div class="logo">
-            <i class="material-icons">menu</i>
+            <i class="material-icons" id="navcloser" onclick="sidebar_close()">menu</i>
+            <i class="material-icons" id="navopener" onclick="sidebar_open()" toggle="true">menu</i>
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="">
         </div>
         <div class="searchbar">
@@ -34,7 +35,7 @@
         </div>
     </div>
     <div class="main">
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
             <div class="menu">
                 <span class="menu-items active">
                     <i class="material-icons">home</i>
@@ -123,7 +124,7 @@
                 </span>
             </div>
         </div>
-        <div class="content">
+        <div class="content" id="content">
             <div class="grid">
                 <div class="video">
                     <div class="thumbnail">
