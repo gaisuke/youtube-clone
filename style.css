@@ -72,6 +72,34 @@ body {
     outline: none;
     margin-top: -5px;
 }
+/* .switch {
+    --line: #e8ebfb;
+    --dot: #275efe;
+    --circle: #d3d4ec;
+    --background: #fff;
+    --duration: 0.3s;
+    --text: #9ea0be;
+    --shadow: 0 1px 3px rgba(0, 9, 61, .08);
+    cursor: pointer;
+    position: relative;
+}
+.switch::before {
+    content: '';
+    width: 60px;
+    height: 32px;
+    border-radius: 16px;
+    background: var(--background);
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: var(--shadow);
+}
+.switch input {
+    display: none;
+}
+.switch input + div {
+    position: relative;
+} */
 .navbar i.userprofile img {
     height: 24px;
     width: 24px;
